@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <link href="main.css" rel="stylesheet">
+  </head>
+  <body style="margin: 0px; display: flex; flex-direction: column;">
+    <div style="display: flex; flex-direction: row;">
+      <div style="margin: 0.5em">
+        <button id="first">&lt;&lt;</button>
+        <button id="prev">&lt;</button>
+        <span style="font-family: monospace;" id="date">YYYY-MM-DD</span>
+        <button id="next">&gt;</button>
+        <button id="last">&gt;&gt;</button>
+      </div>
+      <div style="margin: 0.5em">
+        <label for="resolution">Resolution:</label>
+        <select id="resolution">
+          <option value="1280x720">WXGA (1280✕720)</option>
+          <option value="1920x1080">FHD (1920✕1080)</option>
+          <option value="2560x1440">QHD (2560✕1440)</option>
+          <option value="2560x1600">WQXGA (2560✕1600)</option>
+          <option value="3024x1964">14" MacBook Pro(3024✕1964)</option>
+          <option value="3440x1440">WQHD (3440✕1440)</option>
+          <option value="3840x2160">4K UHD (3840✕2160)</option>
+        </select>
+      </div>
+      <div style="margin: 0.5em">
+        <label for="multiplier">Multiplier:</label>
+        <select id="multiplier">
+          <option value="1">1x</option>
+          <option value="2">2x</option>
+          <option value="3">3x</option>
+          <option value="4">4x</option>
+        </select>
+      </div>
+    </div>
+    <div id="map"></div>
+  </body>
+  <script src="main.js"></script>
+</html>
