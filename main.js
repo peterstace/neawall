@@ -1,5 +1,5 @@
 // TODO: Take zoom from coverage responses.
-const zoom = 21;
+const zoom = 20;
 
 const mapOptions = {
   fadeAnimation: false,
